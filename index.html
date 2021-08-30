@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle"></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBox">
+            <h2>Hello, I'm<br><span>Gyan Shresth.</span></h2>
+            <h3>I'm a student and a programmer.</h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBox">
+                <h3>I'm a student and a programmer.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="w50">
+                <img src="images/about.jpg" class="img">
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="heading white">
+            <h2>My Projects</h2>
+            
+
+            <div class="content">
+                <div class="projectsBox">
+                    <img id="img1" src="images/3D.png">
+                    <h2>A 3D webpage without using any library.</h2>
+                    
+                </div>
+
+                <div class="projectsBox">
+                    <img id="img2" src="images/card.png">
+                    <h2>A card memory game with vanilla JS.</h2>
+                    
+                </div>
+
+                <div id="img3" class="projectsBox">
+                    <img src="images/hub.png">
+                    <h2>A tutorial hub website with html, css and js.</h2>
+                    
+                </div>
+
+                <div class="projectsBox">
+                    <img id="img4" src="images/quiz.png">
+                    <h2>A quiz game with js, html and css.</h2>
+                    
+                </div>
+
+                <div class="projectsBox">
+                    <img id="img5" src="images/trex.png">
+                    <h2>A dinosaur jumping game using p5 library</h2>
+                    
+                </div>
+
+                <div class="projectsBox">
+                    <img id="img6" src="images/cube.png">
+                    <h2>A 3D webpage with using three.js library.</h2>
+                    
+                </div>
+            </div>
+
+
+
+
+    </section>
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2 id="cont">Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBox">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker" style="font-size: 25px;"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>119, BoscoNagar, LatmaRoad<br> Hatia, Ranchi,<br>834003</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone" style="font-size: 25px;"></i>
+                            
+                        </div>
+                        <div class="text" style="font-size: 25px;">
+                            <h3>Phone</h3>
+                            <p>870-944-0248</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>gyanshresth03@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="formBox">
+            <form>
+                <h3>Message Me</h3>
+                <input type="text" name="" placeholder="Full Name">
+                <input type="email" name="" placeholder="Email">
+                <textarea placeholder="Your Meassage"></textarea>
+                <input id="sub" type="submit" value="send">
+            </form>
+        </div>
+        <button onclick="up()" class="up">
+            <img src="images/rocket.png">
+        </button>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        var img1 = document.getElementById("img1")
+        var img2 = document.getElementById("img2")
+        var img3 = document.getElementById("img3")
+        var img4 = document.getElementById("img4")
+        var img5 = document.getElementById("img5")
+        var img6 = document.getElementById("img6")
+
+        img1.onclick = function () {
+            window.open(' https://gyan-js.github.io/3D-web-page/', '_self');
+        }
+
+        img2.onclick = function () {
+            window.open(' https://gyan-js.github.io/MEMORY_CARD_MAIN/', '_self');
+        }
+
+        img3.onclick = function () {
+            window.open(' https://gyan-js.github.io/tutorial-webSite/', '_self');
+        }
+
+        img4.onclick = function () {
+            window.open(' https://gyan-js.github.io/QUIZ_GAME_FINAL_VANNILA_JS/', '_self');
+        }
+
+        img5.onclick = function () {
+            window.open(' https://editor.p5js.org/gyanshresth_2008/sketches/R2DWSNOng/', '_self');
+        }
+
+        img6.onclick = function () {
+            window.open('https://gyan-js.github.io/3D-cube/', '_self');
+        }
+
+        function up() {
+            window.open('#home', '_self')
+        }
+    </script>
+</body>
+
+</html>
