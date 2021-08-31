@@ -139,7 +139,7 @@ header.sticky ul li a{
 }
 
 .w50{
-    min-width: 50%;
+    min-width: 40%;
 }
 
 .img{
@@ -278,6 +278,17 @@ header.sticky ul li a{
     border: none;
     position: absolute;
     left: 95%;
+ 
+   
+    
+}
+
+.abt{
+    font-size: 25px;
+}
+
+.w10{
+    position: absolute;
 }
 
 
